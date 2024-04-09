@@ -4,6 +4,7 @@ import {OnBoardingScreen} from '@screens';
 import {useLaunch} from '@hooks';
 import {createStackNavigator} from '@react-navigation/stack';
 import {MainNavigationRoutes} from '../../types/Navigation';
+import Login from '@screens/Login';
 
 const Stack = createStackNavigator<MainNavigationRoutes>();
 
@@ -30,7 +31,7 @@ const AppNavigator = () => {
           screenOptions={{
             headerShown: false,
           }}>
-          <Stack.Screen name="BottomNavigator" component={BottomNavigator} />
+          <Stack.Screen name="BottomNavigator" component={Login} />
         </Stack.Navigator>
       )}
     </>

@@ -16,12 +16,13 @@ export type MainNavigationRoutes = {
   CallCenter: undefined;
 
   BottomNavigator: undefined;
+
+  Login: undefined;
+  Register: undefined;
 };
 
 export type HomeNavigationRoutes = {
   Home: undefined;
-  Catalog: undefined;
-  CallCenter: undefined;
   Profile: undefined;
 };
 

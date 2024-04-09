@@ -1,7 +1,7 @@
 import {useMemo} from 'react';
 
 import type {StatusBarProps} from 'react-native';
-import type {TStatusBatType} from './Screen';
+import type {TStatusBatType} from './ScreenWrapper';
 import {useTheme} from '@rneui/themed';
 import {useStatusBar} from '@hooks';
 
@@ -18,7 +18,7 @@ export const useSetStatusBar = (statusBarType: TStatusBatType) => {
           };
         case 'primaryDarkGray':
           return {
-            backgroundColor: theme.colors?.grey0,
+            backgroundColor: theme.colors?.success,
             barStyle: 'dark-content',
           };
         case 'translucent':
