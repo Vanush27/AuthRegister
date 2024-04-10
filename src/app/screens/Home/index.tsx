@@ -3,14 +3,14 @@ import {SafeAreaView} from 'react-native';
 
 import {useStyles} from './Home.useStyles';
 
-import {Products} from '@ui-modules';
+import {MapViews, Products} from '@ui-modules';
 
 const Home = () => {
   const {styles} = useStyles();
 
   return (
     <SafeAreaView style={styles.container}>
-      <Products />
+      <MapViews />
     </SafeAreaView>
   );
 };

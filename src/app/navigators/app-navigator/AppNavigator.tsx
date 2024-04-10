@@ -31,7 +31,7 @@ const AppNavigator = () => {
           screenOptions={{
             headerShown: false,
           }}>
-          <Stack.Screen name="BottomNavigator" component={Login} />
+          <Stack.Screen name="BottomNavigator" component={BottomNavigator} />
         </Stack.Navigator>
       )}
     </>

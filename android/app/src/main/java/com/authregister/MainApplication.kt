@@ -1,6 +1,8 @@
 package com.authregister
 
 import android.app.Application
+import com.facebook.react.shell.MainReactPackage;
+
 import com.facebook.react.PackageList
 import com.facebook.react.ReactApplication
 import com.facebook.react.ReactHost
@@ -11,6 +13,8 @@ import com.facebook.react.defaults.DefaultReactHost.getDefaultReactHost
 import com.facebook.react.defaults.DefaultReactNativeHost
 import com.facebook.react.flipper.ReactNativeFlipper
 import com.facebook.soloader.SoLoader
+import com.rnmaps.maps.MapsPackage
+import org.devio.rn.splashscreen.SplashScreenReactPackage;
 
 class MainApplication : Application(), ReactApplication {
 
@@ -20,6 +24,9 @@ class MainApplication : Application(), ReactApplication {
             PackageList(this).packages.apply {
               // Packages that cannot be autolinked yet can be added manually here, for example:
               // add(MyReactNativePackage())
+               SplashScreenReactPackage()  
+                // MainReactPackage()
+                // MapsPackage()
             }
 
         override fun getJSMainModuleName(): String = "index"
@@ -42,4 +49,5 @@ class MainApplication : Application(), ReactApplication {
     }
     ReactNativeFlipper.initializeFlipper(this, reactNativeHost.reactInstanceManager)
   }
+
 }
