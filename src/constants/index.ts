@@ -11,4 +11,4 @@ export const enum STORAGE_ITEMS {
   ALREADY_LAUNCHED = 'isFirstLaunch',
 }
 
-export const GOOGLE_MAPS_API_KEY = 'AIzaSyDjMfGUSpC-S82xJdMmvQJ3tBOWiqsYOOc';
+export const GOOGLE_MAPS_API_KEY = '';
