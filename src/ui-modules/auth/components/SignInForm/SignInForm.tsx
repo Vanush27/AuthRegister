@@ -3,7 +3,7 @@ import React, {createRef, useState} from 'react';
 import {View, type TextInput, TouchableWithoutFeedback} from 'react-native';
 
 import {Formik} from 'formik';
-export {default as isEmpty} from 'lodash/isEmpty';
+
 import {Button, CheckboxInput, Gap, Input, Text, UserIcon} from '@ui-kit';
 
 import {TSignInForm, signInFormSchema} from './SignInForm.schema';
@@ -51,12 +51,14 @@ const SignInForm = ({
         validateForm,
       }) => {
         const submit = async () => {
-          //   const validateErrors = await validateForm();
-          //   if (isEmpty(validateErrors)) {
-          //     if (shouldRememberLogin) onSetShouldRememberLogin(values.login);
-          //     else onResetShouldRememberLogin();
-          //     return await submitForm();
-          //   }
+          return await submitForm();
+          // const validateErrors = await validateForm();
+          // if (validateErrors === null) {
+          //   console.warn(0);
+          //   if (shouldRememberLogin) onSetShouldRememberLogin(values.email);
+          //   else onResetShouldRememberLogin();
+          //   return await submitForm();
+          // }
         };
         return (
           <>
@@ -75,30 +77,19 @@ const SignInForm = ({
               </>
             ) : null}
             <Input
-              value={values?.login}
-              placeholder={'Username'}
+              value={values?.email}
+              placeholder={'email'}
               autoCapitalize="none"
-              autoComplete="username"
-              // leftIcon={
-              //   <UserIcon
-              //     width={12}
-              //     height={12}
-              //     fill={
-              //       focusedField === 'login'
-              //         ? focusedIconColor
-              //         : placeholderIconColor
-              //     }
-              //   />
-              // }
-              errorMessage={errors.login}
+              autoComplete="email"
+              errorMessage={errors.email}
               testID="login-field"
-              onChangeText={handleChange('login')}
+              onChangeText={handleChange('email')}
               onFocus={() => {
-                setFocusedField('login');
+                setFocusedField('email');
               }}
               onBlur={event => {
                 setFocusedField(null);
-                handleBlur('login')(event);
+                handleBlur('email')(event);
               }}
               onSubmitEditing={() => passwordFieldRef.current?.focus()}
             />

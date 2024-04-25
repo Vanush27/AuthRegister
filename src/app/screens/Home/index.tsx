@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView} from 'react-native';
+import {SafeAreaView, Text} from 'react-native';
 
 import {useStyles} from './Home.useStyles';
 
@@ -10,7 +10,9 @@ const Home = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <MapViews />
+      <Text>Home </Text>
+      {/* <MapViews /> */}
+      {/* <MapViews /> */}
     </SafeAreaView>
   );
 };

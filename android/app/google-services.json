@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "330870025390",
+    "project_id": "test-auth-c57ad",
+    "storage_bucket": "test-auth-c57ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330870025390:android:06bacb68a05168a11ad13f",
+        "android_client_info": {
+          "package_name": "com.authregister"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "330870025390-h0qpbote70iamgk8o65c7mfj9rfjqcji.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYPx_1SzsJBkf_Y869dC-xj7xqJ83j95Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "330870025390-h0qpbote70iamgk8o65c7mfj9rfjqcji.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "330870025390-0c1il9qj2b46oasscefm8b7iecmg5ilj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.auth.register"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
